@@ -59,8 +59,8 @@ all: main-build
 main-build: 0_hello_world.elf secondary-outputs
 
 # Tool invocations
-0_hello_world.elf 0_hello_world.map: $(OBJS) $(USER_OBJS) C:\Users\LSE\Desktop\Estudos\DSP_arquitetura_ARM\STM32BareMetalProject\0_hello_world\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "0_hello_world.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\LSE\Desktop\Estudos\DSP_arquitetura_ARM\STM32BareMetalProject\0_hello_world\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0_hello_world.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+0_hello_world.elf 0_hello_world.map: $(OBJS) $(USER_OBJS) C:\Users\LSE\Desktop\Estudos\DSP_arquitetura_ARM\STM32BareMetalProject\DSP_ARM_Architecture\0_hello_world\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "0_hello_world.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\LSE\Desktop\Estudos\DSP_arquitetura_ARM\STM32BareMetalProject\DSP_ARM_Architecture\0_hello_world\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0_hello_world.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
