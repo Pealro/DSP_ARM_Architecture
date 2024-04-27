@@ -1,5 +1,7 @@
 #include "stm32f4xx.h"
 #include "signals.h"
+#include "uart.h"
+#include "stdio.h"
 
 extern float _640_points_ecg_[HZ_5_SIG_LEN];
 float g_in_sig_sample;
@@ -16,8 +18,12 @@ int main(){
 					(1UL << 22)|
 					(1UL << 23));
 
+	//Initialize the uart
+	uart2_tx_init();
+
 	while(1){
-		plot_input_signal();
+		printf("Hello from STM32F4...\n\r");
+		//plot_input_signal();
 	}
 }
 

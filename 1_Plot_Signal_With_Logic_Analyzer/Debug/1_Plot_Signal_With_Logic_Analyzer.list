@@ -95,9 +95,9 @@ int main(){
  80001e2:	4a04      	ldr	r2, [pc, #16]	@ (80001f4 <main+0x1c>)
  80001e4:	f443 0370 	orr.w	r3, r3, #15728640	@ 0xf00000
  80001e8:	f8c2 3088 	str.w	r3, [r2, #136]	@ 0x88
+					(1UL << 21)|
 					(1UL << 22)|
 					(1UL << 23));
-
 
 	while(1){
 		plot_input_signal();
