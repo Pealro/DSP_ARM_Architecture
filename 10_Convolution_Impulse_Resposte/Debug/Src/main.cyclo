@@ -1,0 +1,7 @@
+../Src/main.c:35:5:main	1
+../Src/main.c:71:6:plot_all_signals	4
+../Src/main.c:86:6:convolution	4
+../Src/main.c:108:13:plot_impulse_response	2
+../Src/main.c:115:13:plot_input_signal	2
+../Src/main.c:122:13:pseudo_dly	2
+../Src/main.c:128:13:fpu_enable	1
