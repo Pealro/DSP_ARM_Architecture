@@ -1,0 +1,9 @@
+../Src/main.c:50:5:main	1
+../Src/main.c:83:13:calc_sig_idft	5
+../Src/main.c:117:13:calc_sig_dft	4
+../Src/main.c:141:6:plot_all_signals	2
+../Src/main.c:159:6:convolution	4
+../Src/main.c:181:13:plot_impulse_response	2
+../Src/main.c:188:13:plot_input_signal	2
+../Src/main.c:195:13:pseudo_dly	2
+../Src/main.c:201:13:fpu_enable	1
